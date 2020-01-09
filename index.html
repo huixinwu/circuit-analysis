@@ -4,23 +4,24 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/default.css">
-    <title>Creating Smartphone Apps</title>
+    <title>Circuit Analysis</title>
   </head>
   <body>
 
     <figure>
       <div class="introImage">
-        <span class="title ani1">Creating</span>
-        <span class="title ani2">Smartphone Apps</span>
+        <span class="title ani1">Circuit</span>
+        <span class="title ani2">Analysis</span>
       </div>
+      <figcaption>* Image retrieved from www.pexels.com @ <a href="http://pixabay.com/?ref=pexels" target="_blank">pixabay.com</a> </figcaption>
     </figure>
 
     <!-- navigation tabs -->
     <nav class="navTab" id="navTab">
-        <a class="nav_tabs activeNavTab" href="#course">Creating Smartphone Apps</a>
+        <a class="nav_tabs activeNavTab" href="#course">Circuit Analysis</a>
         <a class="nav_tabs " href="#chapters">Chapters</a>
-        <a class="nav_tabs " href="#exercises">Class Activity</a>
-        <a class="nav_tabs " href="#labExp">Projects</a>
+        <a class="nav_tabs " href="#exercises">Homework</a>
+        <a class="nav_tabs " href="#labExp">Lab Experiments</a>
     </nav>
 <!-- introduction --->
     <section class="txtContainer" id="course">
@@ -28,8 +29,9 @@
         <dt><b>PREFACE</b></dt>
         <br>
         <dd>
-          This OER material is intended for use as the first level of web app development.
-          It introduces the use and features of smartphones in modern life and how to create working applications. Students will create apps using existing modules and building blocks. No prior programming knowledge is necessary. After this initial experience, basics of the HTML, CSS, and JavaScript programming language will be introduced along with a minimum of XML programming to introduce the student to the needs of more advanced apps. Software development kits (SDK), along with the development environment will also be covered. In addition, students will have the opportunity to distribute apps into the Marketplace.
+          This OER material is intended for use as the first level of Circuit Analysis, with emphasis in Direct Current - dc, for a two and four year engineering technology program. The lecture and laboratory manual contains twelve weekly lecture and laboratory experiments. The topics range from basic technical math through principles of circuit analysis such as series, parallel, and series-parallel dc circuit; network theorems (Thevenin’s theorem and maximum power transfer) and circuit methods of analysis (mesh and nodal analysis, source transformation, and source conversion) of solving dc circuits; dc power analysis; capacitance and inductance principles and transient circuit; and introduction to sinusoidal. The course includes a three hours of laboratory work.
+          <br><br>
+          Lab experiments include brief introduction of the experimental topics, step by step procedures, tables and graphs to record measurements, and questions to reinforce the understanding of the theory with the experimental results. Each lab experiment is designed to be completed using a two to three hour practicum period. For equipment, each lab station should include a dual adjustable DC power supply and a quality DMM capable of reading DC voltage, current and resistance.
           <br><br>
           <b style="color:var(--primaryColor);"><i>Acknowledgements</b></i>
           <br><br>
@@ -43,16 +45,18 @@
           <br>
           <dd>At the end of the course, student shall be able to:
           <br><br>
-          <ul>
-            <li>Design and use computer applications to produce Smart Phone Applications.</li>
-            <li>Produce effective written documents including lab reports and term papers.</li>
-            <li>Students will focus on smart phone application development.</li>
-            <li>Students integrate knowledge and skills to develop smartphone apps.</li>
-            <li>Students display ingenuity and initiative to resolve difficulties while working on individual or team project.</li>
-            <li>Students are able to explore connections between multiple experiences and sources of information, clarify problems and generate viable solutions.</li>
-            <li>Students are able to make informed decisions in their own work and approach learning new skills and topics without prompt or delegation.</li>
-            <li>Students build the capacity to understand and appreciate other’s perspective in order to anticipate the needs of the project, customers and/or team.</li>
-          </ul>
+          <ol>
+            <li>Have knowledge in applying basic laws such as Ohm’s law and Kirchhoff’s law (including voltage divider rule and current divider rule) in the characterization of series, parallel, and series-parallel dc circuit and be able to find current, voltage, and power dissipation in a resistivity circuit.</li>
+            <li>Be able to apply Thevenin’s theorem, Norton’s theorem, and maximum power transfer, mesh and nodal analysis, and source transformation in a series parallel resistivity circuit.  </li>
+            <li>Become familiar with the power behavior on a dc circuit such as energy dissipated by a load, and also have the knowledge to calculate the power dissipation for each resistor in a resistivity circuit. </li>
+            <li>Understand the language of circuit analysis and how to use the engineering technology mathematics to formulate and solve dc electrical circuit.</li>
+            <li>Become familiar with the basic behavior of capacitance and understand how to solve for an equivalent capacitance in series, parallel, and series-parallel configuration.</li>
+            <li>Become familiar with the basic behavior of inductance and understand how to solve for an equivalent capacitance in series, parallel, and series-parallel configuration.</li>
+            <li>Understand the characteristics of a sinusoidal waveform, including its general format and effective value. </li>
+            <li>Be able to determine the phase relationship between two sinusoidal waveforms of the same frequency. </li>
+            <li>Become familiar with the response of a resistor, an inductor, and a capacitor to the application of sinusoidal voltage and current.</li>
+            <li>Show ability to interpret experiment data and find the most feasible method to complete the lab experiment.</li>
+          </ol>
         </dd>
       </dl>
     </section>
@@ -61,238 +65,342 @@
     <section class="topics" id='chapters'>
         <h2 class="subtitle">CHAPTERS</h2>
 
-        <button class="collapsible">1. Introduction to web app</button>
+        <button class="collapsible">1. Technical Math</button>
         <div class="content">
-          <p>Student will learn how to use an open-source, Apache Cordova and Android Studion, as a tool for cross-platform to create mobile apps.
-            <br><br>
-            Introduction to HTML coding and how to work with text in HTML
+          <p>Chapter 1 covers the technical mathematics that an engineering technology student needs to know in order to solve and complete the analysis of a circuit under dc.
           </p>
           <br><br>
-          <a href="chapters/chapter1_webApp.pdf" download target="_blank" class='download'>Download - Web App and Introduction to basic HTML tags</a>
+          <a href="chapters/chapter1_reviewMath.pdf" download target="_blank" class='download'>Download - Technical Math</a>
           <br><br><hr>
         </div>
 
-        <button class="collapsible">2. Using basic HTML in a web app</button>
+        <button class="collapsible">2. Introduction to Circuit Analysis</button>
         <div class="content">
-            <p><b>Introduction</b><br><br>In the second week, students will learn how to create links and navigations bars in a web app.
+            <p><b>Chapter 1 </b> introduces circuit terminologies, units, circuit elements, and charge, voltage, current, power, and resistance definitions. 
               <br><br>
-              <a href="chapters/chapter2_TextHTML.pdf" download target="_blank" class='download'>Download - Text, list, tables, images, and navigation tabs in HTML</a>
+              <a href="chapters/chapter2_introCircuitAnalysis.pdf" download target="_blank" class='download'>Download - Introduction to Circuit Analysis</a>
             </p><br><br><hr>
+            <i style="font-size:0.8em;">Supporting video from www.khanacademy.org</i>
+            <br><br>
+            <iframe src="https://www.youtube.com/embed/ZRLXDiiUv8Q" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <br><br>
+            <iframe src="https://www.youtube.com/embed/4frpZ4Q0q58" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <br><br>
+            <iframe src="https://www.youtube.com/embed/17EhKw2tsu4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <br><br>
+            <iframe  src="https://www.youtube.com/embed/k9SwNST1eW0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </div>
 
-          <button class="collapsible">3. Introduction to CSS to style web apps</button>
+          <button class="collapsible">3. Basic laws: Ohm's law, Kirchhoff's law, and power law</button>
           <div class="content">
-            <p>Students will learn to use internal and external CSS file in a web app; how to work with text, colors, images, blocks using and tags, and links in CSS.</p>
+            <p>
             <br><br>
-            <a href="chapters/chapter3_introCSS.pdf" download target="_blank" class='download'>Download - Introduction to CSS to style web apps</a>
+            <a href="chapters/chapter3_basicLaws.pdf" download target="_blank" class='download'>Download - Basic Laws</a>
             <br><br><hr>
+            </p>
           </div>
 
-        <button class="collapsible">4. Navigation Tabs, Social Medio icons, symbols, and icons in CSS </button>
+        <button class="collapsible">4. Series Circuit</button>
         <div class="content">
-          <p>Student will create different type of navigation tabs for a web app, and how to use icons and symbols using CSS.
+          <p>
             <br><br>
-            <a href="chapters/chapter4_layout_navbar_socialMedia.pdf" download target="_blank" class='download'>Download - Layout, Navigation Bars, and Social Media Icons</a>
+            <a href="chapters/chapter4_seriesCircuit.pdf" download target="_blank" class='download'>Download - Series Circuit</a>
           </p><br><br><hr>
           </div>
 
-        <button class="collapsible">5. Image Manipulation in web app  </button>
+        <button class="collapsible">5. Parallel Circuit  </button>
         <div class="content">
-          <p>Student will learn how to apply different filter, color gradient, and border to images in a web app.
+          <p>
             <br><br>
-            <a href="chapters/chapter5_color_Img_CSS.pdf" download target="_blank" class='download'>Download - Colors and Image Manipulation using CSS</a>
+            <a href="chapters/chapter5_parallelCircuit.pdf" download target="_blank" class='download'>Download - Parallel Circuit</a>
             </p>
             <br><br><hr>
         </div>
 
-        <button class="collapsible">6. Basic CSS animation</button>
+        <button class="collapsible">6. Series-Parallel Circuit</button>
           <div class="content">
-            <p>Student will learn how to create basic animation for a web app using keyframe and transformation in CSS.
-              </p><br><br>
-              <a href="chapters/chapter6_CSS_Animation.pdf" download target="_blank" class='download'>Download -  CSS animation</a>
+            <p>
+              <a href="chapters/chapter6_seriesParallel.pdf" download target="_blank" class='download'>Download -  Series-Parallel Circuit</a>
               <br><br><hr>
+            </p>
           </div>
 
-		   <button class="collapsible">7. Tab menu and modal windows in web app </button>
+		   <button class="collapsible">7. Circuit Theory: Source Transformation</button>
           <div class="content">
-            <p>Student will learn a new CSS technique, which is :target selector, to create a tabbed menu and modal windows.   </p><br><br>
-              <a href="chapters/chapter7_modal_tabMenu_WebApp.pdf" download target="_blank" class='download'>Download -  Tab menu and modal windows in web app</a>
+            <p>
+              <a href="chapters/chapter7_sourceTransformation.pdf" download target="_blank" class='download'>Download -  Source Transformation</a>
               <br><br><hr>
+            </p>
             </div>
 
-        <button class="collapsible">8. Slideshow in a web app</button>
+        <button class="collapsible">8. Circuit Theory: Superposition</button>
           <div class="content">
-              <p>Student will learn how to create simple slideshow using keyframe, opacity, and transformation in CSS.</p>
-               <a href="chapters/chapter8_slideshowWebApp.pdf" download target="_blank" class='download'>Download -  Slideshow in a web app</a>
+              <p>
+               <a href="chapters/chapter8_superposition.pdf" download target="_blank" class='download'>Download -  Superposition</a>
 			            <br><br><hr>
+                </p>
             </div>
 
-        <button class="collapsible">9. Collapsible in web app </button>
+        <button class="collapsible">9. Circuit Theory: Mesh Analysis </button>
           <div class="content">
-              <p>Student will learn how to use basic CSS properties such as display to create simple collapsible elements. </p>
-               <a href="chapters/Chapter9_collapsibleWebApp.pdf" download target="_blank" class='download'>Download -  Collapsible in web app</a>
+              <p>
+               <a href="chapters/Chapter9_meshAnalysis.pdf" download target="_blank" class='download'>Download -  Mesh Analysis</a>
 			         <br><br><hr>
+             </p>
           </div>
 
-        <button class="collapsible">10. CSS variables and web app primary and secondary color selection  </button>
+        <button class="collapsible">10. Circuit Theorem: Thevenin's theorem </button>
           <div class="content">
-              <p>Student will learn the meaning of variables, how to select the primary and secondary color for a web app, and how to apply CSS variables to set primary and secondary color.</p>
-               <a href="chapters/chapter10_var_webApp.pdf" download target="_blank" class='download'>Download - CSS variables and web app primary and secondary color selection </a>
+              <p>
+               <a href="chapters/chapter10_thevenin.pdf" download target="_blank" class='download'>Download - Thevenin's theorem </a>
 			         <br><br><hr>
+             </p>
           </div>
 
-        <button class="collapsible">11. Flip cards in a web app</button>
+        <button class="collapsible">11. Circuit Theorem: Maximum Power Transfer</button>
           <div class="content">
-              <p>Student will learn how to manipulate CSS position and rotate to create flip card effect. </p>
-			        <a href="chapters/ch11_flipCard_WebApp.pdf" download target="_blank" class='download'>Download -  Flip cards in a web app</a>
+              <p>
+			        <a href="chapters/ch11_MPT.pdf" download target="_blank" class='download'>Download -  Maximum Power Transfer</a>
 			        <br><br><hr>
           </div>
 
+        <button class="collapsible">12. Capacitance and RC Transient Circuit</button>
+          <div class="content">
+              <p>
+              <a href="chapters/ch12_capacitanceRC.pdf" download target="_blank" class='download'>Download -  Capacitance and RC Transient Circuit</a>
+              <br><br><hr>
+          </div>
+
+        <button class="collapsible">13. Magnetic Field and Inductance</button>
+          <div class="content">
+            <p>
+              <a href="chapters/ch13_inductance.pdf" download target="_blank" class='download'>Download -  Magnetic Field and Inductance</a>
+              <br><br><hr>
+          </div>
+
+        <button class="collapsible">14. Introduction to sinusoidal</button>
+          <div class="content">
+            <p>
+              <a href="chapters/ch14_sinusoidal.pdf" download target="_blank" class='download'>Download -  Introduction to sinusoidal</a>
+              <br><br><hr>
+          </div>
+
+        <button class="collapsible">15. Phasors and Impedance</button>
+          <div class="content">
+            <p>
+              <a href="chapters/ch15_phasorImpedance.pdf" download target="_blank" class='download'>Download -  Phasors and Impedance</a>
+              <br><br><hr>
+          </div>
 </section> <!-- end of chapters -->
 
     <!-- Class Activity -->
 <section class="exercises" id="exercises">
-      <h2 class="subtitle">CLASS ACTIVITY</h2>
+      <h2 class="subtitle" style="color:var(--secondaryColorLight);">Homework</h2>
 
-       <button class="collapsible colorExercise">Class Activity 1: basic HTML </button>
+       <button class="collapsible colorExercise">Homework 1: Technical Math</button>
        <div class="content">
-         <p><b>Class Activity 1:</b> Download and complete Class Activity 1 and complete the following webpage using some basic HTML elements</p><br><br>
-          <a href="projects/activity1_basicHTML.pdf" download target="_blank" class='download'>Download - Class Activity 1: Basic HTML tags</a><br><br>
+         <p><b>Homework 1:</b> Download and complete Homework 1><br><br>
+          <a href="homework/homework1_math.pdf" download target="_blank" class='download'>Download - Homework 1: Technical Math</a><br><br>
           <hr><br>
+        </p>
         </div>
 
-        <button class="collapsible colorExercise">Class Activity 2: links and nav bar in HTML </button>
+        <button class="collapsible colorExercise">Homework 2. Introduction to Circuit Analysis </button>
         <div class="content">
-          <p><b>Class Activity 2:</b> Download and complete Class Activity 2: links and nav bar in HTML</p><br><br>
-           <a href="projects/activity2_linkHTML.pdf" download target="_blank" class='download'>Download - Class Activity 2: links and nav bar in HTML</a><br><br>
+          <p><b>Homework 2:</b> Download and complete homework<br><br>
+           <a href="homework/homework2_introCircuit.pdf" download target="_blank" class='download'>Download - Homeworkk 2. Introduction to Circuit Analysis</a><br><br>
            <hr><br>
+           </p>
          </div>
 
 
-         <button class="collapsible colorExercise">Class Activity 3: intro to CSS </button>
+         <button class="collapsible colorExercise">Homework 3. Basic laws: Ohm's law, Kirchhoff's law, and power law</button>
          <div class="content">
-   	      <p><b>Class Activity 3:</b> Download and complete Class Activity 3: intro to CSS</p><br><br>
-   	       <a href="projects/activity3_introCSS.pdf" download target="_blank" class='download'>Download - Class Activity 3: intro to CSS</a><br><br>
+   	      <p><b>Homework 3:</b> Download and complete homework 3<br><br>
+   	       <a href="homework/homework3_basicLaws.pdf" download target="_blank" class='download'>Download - Homework 3 - Basic Laws</a><br><br>
             <hr><br>
+          </p>
           </div>
 
-          <button class="collapsible colorExercise">Class Activity 4: Navigation tabs, icons, and symbols in CSS</button>
+          <button class="collapsible colorExercise">Homework 4. Series Circuit </button>
           <div class="content">
-            <p><b>Class Activity 4:</b> Download and complete Class Activity 4: Navigation tabs, icons, and symbols in CSS</p><br><br>
-             <a href="projects/activity4_icons.pdf" download target="_blank" class='download'>Download - Class Activity 4: Navigation tabs, icons, and symbols in CSS</a><br><br>
-             <hr><br>
+            <p><b>Homework 4:</b> Download and complete homework 4<br><br>
+             <a href="homework/homework4_series.pdf" download target="_blank" class='download'>Download -Homework 4. Series Circuit</a><br><br>
+             <hr><br></p>
            </div>
 
-           <button class="collapsible colorExercise">Class Activity 5: Image Manipulation </button>
+           <button class="collapsible colorExercise">Homework 5. Parallel Circuit  </button>
            <div class="content">
-             <p><b>Class Activity 5:</b> Download and complete Class Activity 5: Image Manipulation</p><br><br>
-              <a href="projects/activity5_image.pdf" download target="_blank" class='download'>Download - Class Activity 5: Image Manipulation</a><br><br>
-              <hr><br>
+             <p><b>Homework 5:</b> Download and complete Homework 5<br><br>
+              <a href="homework/homework5_parallel.pdf" download target="_blank" class='download'>Download - Homework 5. Parallel Circuit  </a><br><br>
+              <hr><br></p>
             </div>
 
-            <button class="collapsible colorExercise">Class Activity 6: Basic animation in a web app </button>
+            <button class="collapsible colorExercise">Homework 6. Series-Parallel Circuit </button>
             <div class="content">
-              <p><b>Class Activity 6:</b> Download and complete Class Activity 6: Basic animation in web app </p><br><br>
-               <a href="projects/activity6_animation.pdf" download target="_blank" class='download'>Download - Class Activity 6: Basic animation in web app </a><br><br>
-               <hr><br>
+              <p><b>Homework 6:</b> Download and complete homework 6<br><br>
+               <a href="homework/homework6_seriesParallel.pdf" download target="_blank" class='download'>Download -Homework 6. Series-Parallel Circuit</a><br><br>
+               <hr><br></p>
              </div>
 
-             <button class="collapsible colorExercise">Class Activity 7: Tab menu and modal windows in a web app</button>
+             <button class="collapsible colorExercise">Homework 7. Circuit Theory: Source Transformation</button>
              <div class="content">
-               <p><b>Class Activity 7:</b> Download and complete Class Activity 7: Tab menu and modal windows in a web app</p><br><br>
-                <a href="projects/activity7_tabMenu_Modal.pdf" download target="_blank" class='download'>Download - Class Activity 7: Tab menu and modal windows in a web app</a><br><br>
-                <hr><br>
+               <p><b>Homework 7:</b> Download and complete homework 7<br><br>
+                <a href="homework/homework7_sourceTransformation.pdf" download target="_blank" class='download'>Download - Class Activity 7: Tab menu and modal windows in a web app</a><br><br>
+                <hr><br></p>
               </div>
 
-              <button class="collapsible colorExercise">Class Activity 8: Slideshow in a web app </button>
+              <button class="collapsible colorExercise">Homework 8. Circuit Theory: Superposition</button>
               <div class="content">
-                <p><b>Class Activity 8:</b> Download and complete Class Activity 8: Slideshow in a web app </p><br><br>
-                 <a href="projects/activity8_slideshow.pdf" download target="_blank" class='download'>Download - Class Activity 8: Slideshow in a web app </a><br><br>
-                 <hr><br>
+                <p><b>Homework 8:</b> Download and complete homework 8<br><br>
+                 <a href="homework/homework8_superposition.pdf" download target="_blank" class='download'>Download - Homework 8. Circuit Theory: Superposition</a><br><br>
+                 <hr><br></p>
                </div>
 
-               <button class="collapsible colorExercise">Class Activity 9: Collapsible and CSS variables in a web app </button>
+               <button class="collapsible colorExercise">Homework 9. Circuit Theory: Mesh Analysis </button>
                <div class="content">
-                 <p><b>Class Activity 9:</b> Download and complete Class Activity 9: Collapsible and CSS variables in a web app</p><br><br>
-                  <a href="projects/activity9_sollapsible.pdf" download target="_blank" class='download'>Download - Class Activity 9: Collapsible and CSS variables in a web app</a><br><br>
-                  <hr><br>
+                 <p><b>Homework 9:</b> Download and complete homework 9<br><br>
+                  <a href="homework/homework9_mesh.pdf" download target="_blank" class='download'>Download - Homework 9. Circuit Theory: Mesh Analysis </a><br><br>
+                  <hr><br></p>
                 </div>
 
-                <button class="collapsible colorExercise">Class Activity 10: Applying flip cards in web app</button>
+                <button class="collapsible colorExercise">Homework 10. Circuit Theorem: Thevenin's theorem </button>
                 <div class="content">
-                  <p><b>Class Activity 10:</b> Download and complete Class Activity 10: Applying flip cards in web app</p><br><br>
-                   <a href="projects/activity10_flipCards.pdf" download target="_blank" class='download'>Download - Class Activity 10: Applying flip cards in web app</a><br><br>
-                   <hr><br>
+                  <p><b>Homework 10:</b> Download and complete homework 10<br><br>
+                   <a href="homework/homework10_thevenin.pdf" download target="_blank" class='download'>Download - Homework 10. Circuit Theorem: Thevenin's theorem </a><br><br>
+                   <hr><br></p>
                  </div>
+
+           <button class="collapsible colorExercise">Homework 11. Circuit Theorem: Maximum Power Transfer</button>
+             <div class="content">
+               <p><b>Homework 11:</b> Download and complete homework 11<br><br>
+                 <a href="homework/homework11_MPT.pdf" download target="_blank" class='download'>Download - Homework 11. Circuit Theorem: Maximum Power Transfer </a><br><br><hr><br></p>
+             </div>
+
+           <button class="collapsible colorExercise">Homework 12. Capacitance and RC Transient Circuit</button>
+             <div class="content">
+               <p><b>Homework 12:</b> Download and complete homework 12<br><br>
+                 <a href="homework/homework12_capacitance.pdf" download target="_blank" class='download'>Download - Homework 12. Capacitance and RC Transient Circuit</a><br><br><hr><br></p>
+             </div>
+
+           <button class="collapsible colorExercise">Homework 13. Magnetic Field and Inductance</button>
+             <div class="content">
+               <p><b>Homework 13:</b> Download and complete homework 13<br><br>
+                 <a href="homework/homework13_inductance.pdf" download target="_blank" class='download'>Download - Homework 13. Magnetic Field and Inductance</a><br><br><hr><br></p>
+             </div>
+
+           <button class="collapsible colorExercise">Homework 14. Introduction to sinusoidal</button>
+             <div class="content">
+               <p><b>Homework 14:</b> Download and complete homework 14<br><br>
+                 <a href="homework/homework14_sinusoidal.pdf" download target="_blank" class='download'>Download - Homework 14. Introduction to sinusoidal</a><br><br><hr><br></p>
+             </div>
+
+           <button class="collapsible colorExercise">Homework 15. Phasors and Impedance</button>
+             <div class="content">
+               <p><b>Homework 15:</b> Download and complete homework 15<br><br>
+                 <a href="homework/homework15_phasors.pdf" download target="_blank" class='download'>Download - Homework 15. Phasors and Impedance</a><br><br><hr><br></p>
+             </div>
     </section><!--end of exercises -->
 
-    <!-- PROJECTS -->
+    <!-- LAB EXPERIMENTS -->
     <section class="labExp" id="labExp">
-      <h2 class="subtitleProject">PROJECTS</h2>
-      <button class="collapsible colorLab">Project 1 - Informative Wesite using HTML</button>
-      <div class="content">
-        <p><b>Introduction</b><br><br>
-    		Project 1 consists in creating an informative website. The information of the website is about a place (city, country, or state) where you want to inform people about that place. In your website you should have to present four information about the place such as:
-    		<ol>
-    			<li>Where is the place and why it is a famous place. </li>
-    			<li>Activities to do in that place. </li>
-    			<li>Important things or locations of that place. </li>
-    			<li>Show photos of that place. </li>
-    		</ol>
-    		<br>
-    		Remember that you are creating a one page website using the HTML skills learned in Day 1, 2, and 3 of class. The HMTL skills that must be in your websites are:
-    		<ul>
-    			<li>Manipulation of basic HTML tags: paragraph, headings, bold, italic, line breaks, horizontal rules, strikethrough, abbreviations. </li>
-    			<li>Create ordered or unordered list and definition list. </li>
-    			<li>Create tables and use some table’s attributes such as background color, table headings, and/or table’s border. </li>
-    			<li>Use and manipulate images and logos using <i>figure</i> and <i>figcaption</i>, and some images’ attributes such as title, alt, width, height, and align. </li>
-    			<li>Create links to other sites and how to open links in a new window; link to an email address; links to a specific part of the same page; links from an image; and links a webpage with the same site. </li>
-    			<li>Create navigation hyperlinks using unordered list and <i>nav</i> tag. </li>
-    		</ul>
+      <h2 class="subtitleProject">Lab Experiments</h2>
+      <p class="labIntro">
+        Lab experiments from this section is from a collaborative project between the department of Engineering Technology in Queensborough Community College, QCC, and the department of Computer Engineering Technology in New York City College of Technology, NYCCT, is based on creating two laboratory manual for the course of dc circuit analysis and ac circuit analysis. In QCC, the circuit analysis courses are major required courses for students on most of the engineering technology majors. In NYCCT, the circuit analysis courses are major required courses for students in the Electromechanical Engineering Technology and Computer Engineering Technology programs. Creation of these two laboratory manuals that covers the appropriate materials to a sufficient depth of learning circuits analysis while remains readable and accessible manner for the students.
         <br><br>
-        <a href="projects/project1_instructions.pdf" download target="_blank" class='download'>Download Project 1 Instructions</a></p>
-		    <br><br>
-      </div>
+        This lab manual section is intended for use in DC circuit analysis laboratory for a two and four year engineering technology program. The laboratory manual contains 15 weekly lab experiments that include brief introduction of the experimental topics, step by step procedures, tables and graphs to record measurements, and questions to reinforce the understanding of the theory with the experimental results.
+        Each lab experiment is designed to be completed using a two to three hour practicum period. The topics range from basic laboratory procedures and resistor identification through series-parallel circuits, mesh analysis, superposition theorem, Thévenin’s theorem, maximum power transfer theorem, and concludes with an introduction to capacitors and inductors. For equipment, each lab station should include a dual adjustable DC power supply and a quality DMM capable of reading DC voltage, current and resistance.
+      </p>
 
-        <button class="collapsible colorLab">Project 2 - Sales Web App</button>
+      <button class="collapsible colorLab">Lab Experiment 1: Math Review</button>
         <div class="content">
-          <p><b>Introduction</b><br><br>
-      			Project 2 consists of creating a sales webpage. The purpose of project 2 is to use the knowledge of colors, image manipulation, animation, and modal window to create a simple sales page.
-      		 </p>
-      		 <br>
-
-      <!-- VIDEO -->
-      <div class="activityVideo">
-       <video controls>
-         <source src="projects/project1_ET570.mp4" type="video/mp4">
-       </video>
-      </div>
-
-		<br><br><hr>
-
-		 <a href="projects/Instruction_Grading_Project2.pdf" download target="_blank" class='download'>Download Project 2 Instructions</a></p>
-		    <br><br>
+          <p><b>Introduction</b></br> description<br><br>
+            <a href="labExperiment/experiment1_mathReview.pdf" download target="_blank" class='download'>Download - Lab Experiment 1: Math Review</a><br><br><hr><br></p>
         </div>
 
-        <button class="collapsible colorLab">Project 3 - Children Apps</button>
+      <button class="collapsible colorLab">Lab Experiment 2: Resistor and Resistance</button>
         <div class="content">
-          <p><b>Introduction</b><br><br>
-
-      		 </p>
-      		 <br>
-
-		 <!-- VIDEO -->
-     <div class="activityVideo">
-      <video controls>
-        <source src="projects/project3.mp4" type="video/mp4">
-      </video>
-     </div>
-
-		<br><br><hr>
-		<a href="projects/project3.pdf" download target="_blank" class='download'>Download Project 3 Instructions</a></p>
-		    <br><br>
+          <p><b>Introduction</b></br> description<br><br>
+            <a href="labExperiment/experiment2_resistance.pdf" download target="_blank" class='download'>Download - Lab Experiment 2: Resistor and Resistance</a><br><br><hr><br></p>
         </div>
 
+      <button class="collapsible colorLab">Lab Experiment 3: Resistance Measurements</button>
+        <div class="content">
+          <p><b>Introduction</b></br> description<br><br>
+            <a href="labExperiment/experiment3_resistanceMeasurements.pdf" download target="_blank" class='download'>Download - Lab Experiment 3: Resistance Measurements</a><br><br><hr><br></p>
+        </div>
+
+      <button class="collapsible colorLab">Lab Experiment 4: Voltage Measurements</button>
+        <div class="content">
+          <p><b>Introduction</b></br> description<br><br>
+            <a href="labExperiment/experiment4_voltage.pdf" download target="_blank" class='download'>Download - Lab Experiment 4: Voltage Measurements</a><br><br><hr><br></p>
+        </div>
+
+      <button class="collapsible colorLab">Lab Experiment 5: Current Measurements</button>
+        <div class="content">
+          <p><b>Introduction</b></br> description<br><br>
+            <a href="labExperiment/experiment5_current.pdf" download target="_blank" class='download'>Download - Lab Experiment 5: Current Measurements</a><br><br><hr><br></p>
+        </div>
+
+      <button class="collapsible colorLab">Lab Experiment 6: Multisim</button>
+        <div class="content">
+          <p><b>Introduction</b></br> description<br><br>
+            <a href="labExperiment/experiment6_multisim.pdf" download target="_blank" class='download'>Download - Lab Experiment 6: Multisim</a><br><br><hr><br></p>
+        </div>
+
+      <button class="collapsible colorLab">Lab Experiment 7: Ohm's Law and Series Circuit</button>
+        <div class="content">
+          <p><b>Introduction</b></br> description<br><br>
+            <a href="labExperiment/experiment7_Ohm_series.pdf" download target="_blank" class='download'>Download - Lab Experiment 7: Ohm's Law and Series Circuit</a><br><br><hr><br></p>
+        </div>
+
+      <button class="collapsible colorLab">Lab Experiment 8: Parallel Circuit</button>
+        <div class="content">
+          <p><b>Introduction</b></br> description<br><br>
+            <a href="labExperiment/experiment8_parallel.pdf" download target="_blank" class='download'>Download - Lab Experiment 8: Parallel Circuit</a><br><br><hr><br></p>
+        </div>
+
+        <button class="collapsible colorLab">Lab Experiment 9: Series-Parallel Circuit</button>
+          <div class="content">
+            <p><b>Introduction</b></br> description<br><br>
+              <a href="labExperiment/experiment9_seriesParallel.pdf" download target="_blank" class='download'>Download - Lab Experiment 9: Series-Parallel Circuit</a><br><br><hr><br></p>
+          </div>
+
+        <button class="collapsible colorLab">Lab Experiment 10: DC Power Analysis</button>
+          <div class="content">
+            <p><b>Introduction</b></br> description<br><br>
+              <a href="labExperiment/experiment10_power.pdf" download target="_blank" class='download'>Download - Lab Experiment 10: DC Power Analysis</a><br><br><hr><br></p>
+          </div>
+
+        <button class="collapsible colorLab">Lab Experiment 11: Short and Open circuit: switches and relays</button>
+          <div class="content">
+            <p><b>Introduction</b></br> description<br><br>
+              <a href="labExperiment/experiment11_shortOpen.pdf" download target="_blank" class='download'>Download - Lab Experiment 11: Short and Open circuit: switches and relays</a><br><br><hr><br></p>
+          </div>
+
+        <button class="collapsible colorLab">Lab Experiment 12: Superposition Theorem</button>
+          <div class="content">
+            <p><b>Introduction</b></br> description<br><br>
+              <a href="labExperiment/experiment12_superposition.pdf" download target="_blank" class='download'>Download - Lab Experiment 12: Superposition Theorem</a><br><br><hr><br></p>
+          </div>
+
+        <button class="collapsible colorLab">Lab Experiment 13: Thevenin Theorem and Maximum Power Transfer</button>
+          <div class="content">
+            <p><b>Introduction</b></br> description<br><br>
+              <a href="labExperiment/experiment13_thevenin_MPT.pdf" download target="_blank" class='download'>Download - Lab Experiment 13: Thevenin Theorem and Maximum Power Transfer</a><br><br><hr><br></p>
+          </div>
+
+        <button class="collapsible colorLab">Lab Experiment 14: Capacitors and RC Transient Circuit</button>
+          <div class="content">
+            <p><b>Introduction</b></br> description<br><br>
+              <a href="labExperiment/experiment14_capacitors_RCTransient.pdf" download target="_blank" class='download'>Download - Lab Experiment 14: Capacitors and RC Transient Circuit</a><br><br><hr><br></p>
+          </div>
+
+        <button class="collapsible colorLab">Lab Experiment 15: Introduction to sinusoidal</button>
+          <div class="content">
+            <p><b>Introduction</b></br> description<br><br>
+              <a href="labExperiment/experiment15_sinusoidal.pdf" download target="_blank" class='download'>Download - Lab Experiment 15: Introduction to sinusoidal</a><br><br><hr><br></p>
+          </div>
 </section><!-- end of projects -->
 
     <!-- credits -->
@@ -304,9 +412,10 @@
              <i>This work is freely redistributable for non-commercial use, share-alike with attribution</i>
            </div>
             <br><br>
-      			<p><em>Important note: </em>The materials used in this manual have the author's rights and are for educational use only. Some informative material is compiled from www.lynda.com, www.wikipedia.org, www.w3schools.com, www.khanacademy.com</p>
+      			<p><em>Important note: </em>The materials used in this manual have the author's rights and are for educational use only. Some informative material is compiled from  www.khanacademy.com, www.wikipedia.org</p>
            <hr> <br>
-           <b>About the Authors:</b>
+           <b style="color:var(--primaryColor);"><i>About the Authors</b></i>
+           <br><br>
             Professor Wu is the course coordinator of the Digital Computer Theory course with the department of Engineering Technology at QCC. As the course coordinator, professor Wu updates the course outline and also creates homework and exercises to complement the learning materials for the course. She also has participated in grants and has experiences in creating new teaching terminologies for engineering technology students. She was the CO-PI of the National Science Foundation (NSF) STEM grant titled “A video Lecture Library and an Interactive Systems for Computer Programming Concepts”. In addition from her teaching schedule, she is the lead of the curriculum development of TechWorks grant, and a faculty mentor of the students Undergraduate Research Project program at QCC. Professor Wu has more than ten years of experience teaching  both the Digital Computer Theory course and laboratory in QCC and NYCCT.
             <br><br><br>
             For more information or feedback, contact:
@@ -317,9 +426,19 @@
             <a href="http://www.qcc.cuny.edu/" target="_blank"> Queensborough Community College</a> <br>
             <a href="https://www.google.com/maps/search/qcc/@40.7561779,-73.7599375,17z/data=!3m1!4b1" target="_blank">222-05 56th Avenue, Bayside, NY 11364</a>  <br>
             <a href="mailto:hwu@qcc.cuny.edu">hwu@qcc.cuny.edu</a>
-            <br> <br> <hr>
-            <i><h6>Web Technology: material prepared by professor Huixin Wu @ 2019</h6></i>
-
+            <br> <br>
+            <b style="color:var(--primaryColor);"><i>Collaborative lab manual author</b></i>
+            <br><br>
+            Professor Kwon is an assistant professor in the department of the Computer Engineering Technology. He is the EMT program coordinator and the course coordinator of the ac circuit analysis in NYCCT. He has been teaching dc and ac circuit analysis courses for several years and updated curriculums for the lecture and lab of circuit courses. He participated in a series of Open Educational Resources workshops in Spring 2016 and developed the supplementary OER website for EMT Laboratories which provides students more information about lab components, equipment, and breadboarding in the lab.
+            <h3>Professor Ohbong Kwon,</h3>
+            <b>Assistant Professor</b> <br>
+            <i>Computer Engineering Technology Department </i> <br>
+            <a href="http://www.citytech.cuny.edu/" target="_blank"> New York City College of Technology</a> <br>
+            <a href="https://www.google.com/maps/place/New+York+City+College+of+Technology/@40.6954801,-73.9901004,17z/data=!3m1!4b1!4m5!3m4!1s0x89c25a4a6c47643b:0x284552dca0b97d69!8m2!3d40.6954761!4d-73.9879117" target="_blank">300 Jay St., Brookly, NY 11201</a>  <br>
+            <a href="mailto:okwon@citytech.cuny.edu">okwon@citytech.cuny.edu</a>
+            <br> <br>
+            <hr>
+            <i><h6>Circuit Analysis: material prepared by professor Huixin Wu @ 2020</h6></i>
 
 </section><!-- end of credits -->
 

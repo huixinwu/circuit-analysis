@@ -2,58 +2,58 @@
 }
 html{scroll-behavior:smooth;}
 :root {
-  --primaryColor:#1a237e; /*rgb(26,35,126) */
-  --primaryColorDark: #000051;
-  --primaryLightColor: #8bf6ff;
-  --primaryVeryLight:#e1f5fe;
-  --secondaryColor: #455a64;
-  --secondaryDarkColor: #1c313a; /*rgb(28,50,58)*/
-  --secondaryColorLight: #afc2cb;
-  --bgdColorFooter: rgb(0,0,30);
-  --bgdColorIntro:rgb(240,250,255);
+  --primaryColor:#ff6d00; /*rgb(26,35,126) */
+  --primaryColorDark: #c43c00;
+  --primaryLightColor: #ff9e40;
+  --primaryVeryLight:#ffffb0; /*-PENDING--*/
+  --secondaryColor: #3d2622; /* 61,38,34
+  --secondaryDarkColor: #1a0000; /*rgb(28,50,58)*/
+  --secondaryColorLight: #694e4a;
+  --bgdColorFooter:#3b0000;
+  --bgdColorIntro:#ffffe4;
 }
 :target {
   border: ridge var(--secondaryColorLight);
 }
 /* ---- intro image ----*/
 .title{
-  font-size: 4em;
+  font-size: 5em;
   font-family: LCD5x8H;
   color: var(--primaryLightColor);
   text-align: center;
   font-weight: 600;
   position: absolute;
-  text-shadow: 2px 2px 5px white;
+  text-shadow: 2px 2px 5px var(--bgdColorIntro);
 }
 .ani1{
     left: 0px;
     top: 200px;
     text-align: right;
-    width: 38%;
+    width: 48%;
     animation: title1 3s;
 }
 .ani2{
     top:200px;
     right: 0px;
     text-align: left;
-    width: 60%;
+    width: 50%;
     animation: title2 3s;
 }
 @keyframes title1 {
-  0%{opacity: 0;top:0; transform: scale(0);text-shadow: 0px 0px 0px white;}
-  20%{opacity: 0.5;top:100px; transform: scale(1.5); text-shadow: 0px 0px 0px white;}
-  40%{opacity: 0;top:2000px; transform: scale(0);text-shadow: 0px 0px 0px white;}
-  60%{opacity: 0.5;top:50px; transform: scale(1.5);text-shadow: -20px -20px 5px white;}
-  80%{opacity: 1;top:200px; transform: scale(0.8);text-shadow: 15px 15px 5px white;}
-  100%{opacity: 1;top:200px; transform: scale(1);text-shadow: -2px -2px 5px white;}
+  0%{opacity: 0;top:0; transform: scale(0);text-shadow: 0px 0px 0px var(--bgdColorIntro);}
+  20%{opacity: 0.5;top:100px; transform: scale(1.5); text-shadow: 0px 0px 0px var(--bgdColorIntro);}
+  40%{opacity: 0;top:2000px; transform: scale(0);text-shadow: 0px 0px 0px var(--bgdColorIntro);}
+  60%{opacity: 0.5;top:50px; transform: scale(1.5);text-shadow: -20px -20px 5px var(--bgdColorIntro);}
+  80%{opacity: 1;top:200px; transform: scale(0.8);text-shadow: 15px 15px 5px var(--bgdColorIntro);}
+  100%{opacity: 1;top:200px; transform: scale(1);text-shadow: -2px -2px 5px var(--bgdColorIntro);}
 }
 @keyframes title2 {
-  0%{opacity: 0;top:2000px; transform: scale(0);text-shadow: 0px 0px 0px white;}
-  20%{opacity: 0.5;top:500px; transform: scale(1.5); text-shadow: 0px 0px 0px white;}
-  40%{opacity: 0;top:-200px; transform: scale(0);text-shadow: 0px 0px 0px white;}
-  60%{opacity: 0.5;top:800px; transform: scale(1.5);text-shadow: -20px -20px 5px white;}
-  80%{opacity: 1;top:200px; transform: scale(0.8);text-shadow: 15px 15px 5px white;}
-  100%{opacity: 1;top:200px; transform: scale(1);text-shadow: -2px -2px 5px white;}
+  0%{opacity: 0;top:2000px; transform: scale(0);text-shadow: 0px 0px 0px var(--bgdColorIntro);}
+  20%{opacity: 0.5;top:500px; transform: scale(1.5); text-shadow: 0px 0px 0px var(--bgdColorIntro);}
+  40%{opacity: 0;top:-200px; transform: scale(0);text-shadow: 0px 0px 0px var(--bgdColorIntro);}
+  60%{opacity: 0.5;top:800px; transform: scale(1.5);text-shadow: -20px -20px 5px var(--bgdColorIntro);}
+  80%{opacity: 1;top:200px; transform: scale(0.8);text-shadow: 15px 15px 5px var(--bgdColorIntro);}
+  100%{opacity: 1;top:200px; transform: scale(1);text-shadow: -2px -2px 5px var(--bgdColorIntro);}
 }
 figure{
   width: 1200px;
@@ -61,16 +61,18 @@ figure{
   margin: auto;
   margin-top: 50px;
   border-radius: 20px;
+  margin-bottom: 50px;
 }
+figcaption{font-size: 0.6em; float: right; padding-right: 10px;}
 .introImage{
   width: 100%;
   height: 600px;
-  background-image: linear-gradient(to left top, rgba(28,50,58,0.6), rgba(26,35,126,0.4)), url('../images/smartphone.jpg');
+  background-image: linear-gradient(to left top, rgba(28,50,58,0.6), rgba(26,35,126,0.4)), url('../images/circuit.jpg');
   background-size: 100% 100%;
   background-repeat: no-repeat;
   position: relative;
   border-radius: 20px;
-  box-shadow: 3px 3px 10px black;
+  box-shadow: 1px 1px 10px black;
   overflow: hidden;
 }
 /* --- navigation tabs ---*/
@@ -91,12 +93,12 @@ nav a{
     text-decoration: none;
     width: 25%;
     height: 100%;
-    background-color: rgba(0,0,0,0.3);
+    background-color: rgba(61,38,34,0.8);
     padding: 10px;
 }
 nav a:hover, .activeNavTab{
   background-color: var(--bgdColorFooter);
-  color: var(--secondaryColorLight);
+  color: var(--bgdColorIntro);
 }
 
 /*--- text container --*/
@@ -142,7 +144,7 @@ dt{color: var(--primaryColor);}
 }
 .active, .collapsible:hover{
   background-color: var(--primaryColorDark);
-  color: var(--secondaryColorLight);
+  color: var(--bgdColorIntro);
 }
 .collapsible:after{
   content: '\002B';
@@ -175,7 +177,7 @@ dt{color: var(--primaryColor);}
   background-color: var(--secondaryColorLight);
   color: var(--primaryColor);
   border-radius: 5px;
-  padding: 5px;
+  padding: 10px 20px;
   font-weight: 600;
 }
 .download:hover{background-color: var(--secondaryColor); color: var(--primaryVeryLight);}
@@ -189,8 +191,9 @@ dt{color: var(--primaryColor);}
 }
 .exercises{
 background-color: var(--primaryLightColor);}
-/* ----*/
+/* --LAB EXPERIMENTS--*/
 .labExp{  background-color: var(--primaryColor);}
+.labIntro{ padding: 12px; text-align: justify;}
 .khanLink{ padding: 12px; background-color: var(--secondaryDarkColor); color: var(--primaryVeryLight); text-decoration: none; border-radius: 12px;}
 .khanLink:hover{
   background-color: var(--primaryColor); color: var(--secondaryColorLight);
@@ -204,7 +207,7 @@ background-color: var(--primaryLightColor);}
   padding: 100px 20px 100px 20px;
   color: white;
   height: auto;
-
+  text-align: justify;
 }
 .copyrighted{
   width: 100%;
@@ -236,6 +239,7 @@ background-color: var(--primaryLightColor);}
 @media only screen and (max-width: 1250px){
   .title{font-size: 3em;}
   figure{   width: 800px;   height: 400px; }
+  figcaption{font-size: 0.5em;}
   .introImage{  height: 400px;}
   .p1, .p2, .p3{  font-size: 1em;}
   .p1 i, .p2 i{  font-size: 0.6em;}
