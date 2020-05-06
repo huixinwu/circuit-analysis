@@ -129,8 +129,6 @@ dt{color: var(--primaryColor);}
   text-align: left;
   outline: none;
   font-size: 1em;
-}
-.collapsible{
   background-color: var(--primaryVeryLight);
   color: var(--primaryColorDark);
 }
@@ -179,6 +177,9 @@ dt{color: var(--primaryColor);}
   border-radius: 5px;
   padding: 10px 20px;
   font-weight: 600;
+  display: inline-block;
+  margin-top: 2em;
+  margin-bottom: 1em;
 }
 .download:hover{background-color: var(--secondaryColor); color: var(--primaryVeryLight);}
 /* --  -- */
