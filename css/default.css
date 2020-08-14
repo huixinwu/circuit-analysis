@@ -367,9 +367,7 @@ background-color: var(--primaryLightColor);}
 }/* end of media
 /*--- VIDEOS --*/
 .activityVideo{
-width: 80%;
-margin-left: auto;
-margin-right: auto;
+width: 100%;
 }
 .activityVideo video{
   max-width: 100%;
