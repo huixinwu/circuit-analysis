@@ -17,7 +17,7 @@ html{scroll-behavior:smooth;}
 }
 /* ---- intro image ----*/
 .title{
-  font-size: 5em;
+  font-size: 4em;
   font-family: LCD5x8H;
   color: var(--primaryLightColor);
   text-align: center;
@@ -56,19 +56,18 @@ html{scroll-behavior:smooth;}
   100%{opacity: 1;top:200px; transform: scale(1);text-shadow: -2px -2px 5px var(--bgdColorIntro);}
 }
 figure{
-  width: 1200px;
-  height: 600px;
+  width: 1000px;
+  height: 450px;
   margin: auto;
   margin-top: 50px;
   border-radius: 20px;
-  margin-bottom: 50px;
 }
 figcaption{font-size: 0.6em; float: right; padding-right: 10%; }
 .introImage{
   margin-left: auto;
   margin-right: auto;
   width: 80%;
-  height: 500px;
+  height: 100%;
   background-image: linear-gradient(to left top, rgba(28,50,58,0.6), rgba(26,35,126,0.4)), url('../images/circuit.jpg');
   background-size: 100% 100%;
   background-repeat: no-repeat;
@@ -79,7 +78,7 @@ figcaption{font-size: 0.6em; float: right; padding-right: 10%; }
 }
 /* --- navigation tabs ---*/
 nav{
-  width: 1200px;
+  width: 80%;
   height: 60px;
   margin: auto;
   margin-top: 30px;
@@ -105,7 +104,7 @@ nav a:hover, .activeNavTab{
 
 /*--- text container --*/
 .txtContainer{
-  width: 1200px;
+  width: 80%;
   height: auto;
   padding: 100px 20px 100px 20px;
   margin: auto;
@@ -114,7 +113,7 @@ nav a:hover, .activeNavTab{
 dt{color: var(--primaryColor);}
 /* --- TOPICS ---*/
 .topics{
-  width: 1200px;
+  width: 80%;
   height: auto;
   background-color: var(--primaryVeryLight);
   margin: auto;
@@ -188,7 +187,7 @@ dt{color: var(--primaryColor);}
 .exercises, .labExp, .wi, .credits{
   padding-top: 100px;
   padding-bottom: 100px;
-  width: 1200px;
+  width: 80%;
   height: auto;
   margin: auto;
 }
@@ -243,7 +242,6 @@ background-color: var(--primaryLightColor);}
   .title{font-size: 3em;}
   figure{   width: 800px;   height: 400px; }
   figcaption{font-size: 0.5em;}
-  .introImage{  height: 400px;}
   .p1, .p2, .p3{  font-size: 1em;}
   .p1 i, .p2 i{  font-size: 0.6em;}
   .p3 i{font-size: 0.5em}
@@ -251,7 +249,6 @@ background-color: var(--primaryLightColor);}
 
   /* --- navigation tabs ---*/
   .navTab{
-    width: 800px;
     height: 50px;
     margin-top: 20px;
     font-size: 0.9em;
@@ -260,7 +257,6 @@ background-color: var(--primaryLightColor);}
 
   /*--- text container --*/
   .txtContainer{
-    width: 800px;
     height: auto;
     padding: 60px 15px 60px 15px;
     font-size: 0.9em;
@@ -268,7 +264,6 @@ background-color: var(--primaryLightColor);}
 
   /* --- topics ---*/
   .topics, .exercises, .labExp, .wi{
-    width: 800px;
     padding-top: 60px;
     padding-bottom: 60px;
     font-size: 0.9em;
@@ -284,7 +279,6 @@ background-color: var(--primaryLightColor);}
   }
 /* --- credits -------*/
 .credits{
-  width: 800px;
   padding:60px 18px 60px 18px;
   font-size: 0.9em;
 }
@@ -297,11 +291,18 @@ background-color: var(--primaryLightColor);}
 */
 @media only screen and (max-width: 850px) {
   figure{
-    width: 460px;
-    height: 300px;
+    width: 90%;
+    height: 150px;
+  }
+  .ani1{
+      top: 50px;
+      width: 70%;
+  }
+  .ani2{
+      top:100px;
+      width: 70%;
   }
   .title{       font-size: 1.7em;   }
-  .introImage{  height: 300px;}
   .p1, .p2, .p3{  font-size: 0.8em; width: 90%;}
   .p1, .p2{color: var(--primaryVeryLight)}
   .p1 i, .p2 i{  font-size: 0.6em;}
@@ -310,7 +311,7 @@ background-color: var(--primaryLightColor);}
 
   /* --- navigation tabs ---*/
   .navTab{
-    width: 460px;
+    width: 90%;
     height: 45px;
     margin-top: 15px;
     font-size: 0.63em;
@@ -318,7 +319,7 @@ background-color: var(--primaryLightColor);}
 
   /*--- text container --*/
   .txtContainer{
-    width: 460px;
+    width: 90%;
     height: auto;
     padding: 60px 10px 60px 10px;
     font-size: 0.7em;
@@ -332,7 +333,7 @@ background-color: var(--primaryLightColor);}
 }
   /* --- topics ---*/
   .topics, .exercises, .labExp, .wi{
-    width: 460px;
+    width: 90%;
     padding-top: 60px;
     padding-bottom: 40px;
     font-size: 0.7em;
@@ -348,7 +349,7 @@ background-color: var(--primaryLightColor);}
   }
   /* --- credits -------*/
   .credits{
-    width: 460px;
+    width: 90%;
     padding: 60px 12px 40px 12px;
     font-size: 0.7em;
   }
