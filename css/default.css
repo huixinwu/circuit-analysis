@@ -236,6 +236,49 @@ background-color: var(--primaryLightColor);}
 	height:100%;
 	margin:2%
 }
+/* ---- terms of use ----- */
+.terms_of_use{
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  opacity: 0;
+  pointer-events: none;
+}
+.terms_of_use:target{
+  opacity: 1;
+  pointer-events: auto;
+}
+.terms_content{
+  width: 80%;
+  height: 80%;
+  margin-top: 5%;
+  margin-left: 10%;
+  background-color:var(--primaryVeryLight);
+  overflow-y: scroll;
+  color: black;
+  padding: 1.5em;
+}
+.terms_content h1{
+  color: var(--primaryColorDark);
+  float: left;
+  width: 100%;
+}
+.terms_content a{
+  float: right;
+  padding: 0em 0.5em;
+  display: block;
+  color: var(--secondaryDarkColor);
+}
+.termClose{
+  background-color: var(--primaryColorDark);
+  border-radius: 20%;
+  box-shadow: 0 0 10px 2px var(--primaryColorDark);
+  font-weight: 600;
+  color: var(--secondaryColorLight)
+}
 /*------------- MEDIA SCREEN ----------------------------------------
 */
 @media only screen and (max-width: 1250px){
